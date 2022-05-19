@@ -19,6 +19,7 @@ def request_and_print_sync(i):
     res = requests.get(url)
     print("\n", json.loads(res.content))
 
+# try this function for comparison
 def sync_loop():
     for i in range(1,5):
         request_and_print(i)
